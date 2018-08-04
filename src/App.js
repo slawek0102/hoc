@@ -9,8 +9,10 @@ class App extends Component {
             <div className="App">
 
                 <ButtonWithStyles
-                    imie='slawek'
-                    disable
+
+                    imie = 'Slawek'
+                    nazwisko = 'Grzebyk'
+
                 />
 
             </div>
