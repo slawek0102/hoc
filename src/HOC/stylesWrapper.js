@@ -9,9 +9,18 @@ export default (WrappedComponent) => {
 
 
 const translateProps = (args) => {
-
-    console.log('Argumenty',args)
-
-    return (args.imie + " i "+ args.nazwisko)
-
+    if (args.imie === 'Slawek') {
+        return (styles.myColor)
+    } else {
+        return null
+    }
 };
+
+
+const styles = {
+    myColor: {
+        backgroundColor: 'green',
+        color: 'red',
+        padding: '20px'
+    }
+}

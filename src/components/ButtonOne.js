@@ -3,10 +3,13 @@ import stylesWrapper from './../HOC/stylesWrapper';
 
 const ButtonWithStyles = (props) => {
 
-    return (
-        <div>
-            <button >{props}</button>
+const {...myColor} = props;
 
+console.log(props)
+
+    return (
+        <div >
+            <button style={myColor}>Slawek</button>
         </div>
     )
 };
