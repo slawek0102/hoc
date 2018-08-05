@@ -1,15 +1,13 @@
 import React from 'react';
-import stylesWrapper from './../HOC/stylesWrapper';
+import stylesWrapper from '../HOC/stylesWrapper'
 
 const ButtonWithStyles = (props) => {
 
-const {...myColor} = props;
-
-console.log(props)
+const {...style} = props;
 
     return (
         <div >
-            <button style={myColor}>Slawek</button>
+            <button style={style}>Slawek</button>
         </div>
     )
 };

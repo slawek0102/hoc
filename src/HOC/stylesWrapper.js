@@ -10,17 +10,22 @@ export default (WrappedComponent) => {
 
 const translateProps = (args) => {
     if (args.imie === 'Slawek') {
-        return (styles.myColor)
+        return (styles.slawek)
     } else {
-        return null
+        return (styles.marek)
     }
 };
 
 
 const styles = {
-    myColor: {
+    slawek: {
         backgroundColor: 'green',
         color: 'red',
         padding: '20px'
+    },
+    marek: {
+        backgroundColor: 'yellow',
+        color: 'red',
+        padding: '20px'
     }
-}
+};
